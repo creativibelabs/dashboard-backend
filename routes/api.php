@@ -10,6 +10,7 @@ Route::get('/get-token', function () {
 Route::middleware('public_apis')->group(function () {
     Route::post('/login', [AuthController::class, 'login']);
     Route::post('/register-client', [AuthController::class, 'registerClient']);
+    Route::post('/google', [AuthController::class, 'GoogleTest']);
 });
 
 Route::middleware('auth:sanctum')->group(function () {

@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+
+    public function GoogleTest( Request $request ) {
+
+        dd( $request );
+    }
+
     public function login(Request $request)
     {
         $request->validate([
