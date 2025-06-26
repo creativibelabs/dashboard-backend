@@ -24,7 +24,6 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->alias([
             'verified' => \App\Http\Middleware\EnsureEmailIsVerified::class,
-            'public_apis' => \App\Http\Middleware\ValidateApiToken::class,
         ]);
 
         //
